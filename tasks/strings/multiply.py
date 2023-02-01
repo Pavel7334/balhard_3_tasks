@@ -19,8 +19,8 @@ def multiply_str(user_string: str, n: str) -> str:
 
     :return: результирующая строка
     """
-    result = None
-    return result
+
+    return f'{user_string * int(n)}'
 
 
 if __name__ == '__main__':
