@@ -19,8 +19,8 @@ def sum_str(first_str: str, second_str: str) -> str:
 
     :return: результат склеивания
     """
-    result = None
-    return result
+
+    return f'{first_str} {second_str}'
 
 
 if __name__ == '__main__':
