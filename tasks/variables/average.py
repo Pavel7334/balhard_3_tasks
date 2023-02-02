@@ -5,6 +5,7 @@
 которая возвращает среднее арифметическое аргументов
 и округляет его до 5 знаков после запятой.
 """
+from statistics import mean
 from typing import Union
 
 
@@ -18,8 +19,8 @@ def calc_average(a: int, b: int, c: int) -> Union[int, float]:
 
     :return: среднее арифметическое, округленное до 5 знаков
     """
-    result = None
-    return result
+    values = (a, b, c)
+    return round(sum(values) / len(values), 5)
 
 
 if __name__ == '__main__':
